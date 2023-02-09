@@ -1,1 +1,46 @@
-tst
+============================== 
+from django.views import View            
+View 
+
+(attributes define in)
+------------------------------
+http_method_names = ['get', 'post', 'put', 'patch', 'delete', 'head', 'options', 'trace']
+view_is_async = False
+------------------------------
+
+=========================================
+from rest_framework.views import APIView
+view -> APIView
+APIView
+
+(attributes define in)
+-----------------------------------------
+allowed_methods
+authentication_classes
+content_negotiation_class
+default_response_headers
+metadata_class
+parser_classes
+permission_classes
+renderer_classes
+schema
+settings
+throttle_classes = []
+versioning_class = None
+------------------------------------------
+
+===================================================
+from rest_framework.generics import GenericAPIView
+view-> APIView -> GenericAPIView
+GenericAPIView 
+
+(attributes define in)
+---------------------------------------------------
+filter_backends = []
+lookup_field = pk
+lookup_url_kwarg = None
+pagination_class = None
+paginator
+queryset = None
+serializer_class = None
+---------------------------------------------------
