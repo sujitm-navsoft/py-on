@@ -1,0 +1,13 @@
+==============================
+validation
+
+[*] single field validation
+    validate_fieldname(self,value)
+
+[*] multiple field validation
+    validate(self,obj)
+
+[*] for custom validation message use 
+    extra_kwargs = {
+        "title": {"error_messages": {"max_length": "Not more than 50 characters."}}
+    }
