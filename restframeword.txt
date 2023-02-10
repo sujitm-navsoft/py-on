@@ -44,3 +44,11 @@ paginator
 queryset = None
 serializer_class = None
 ---------------------------------------------------
+
+==================================================
+work flow
+[*] self.get_queryset() 
+    Get the list of items for this view. This must be an iterable, and may be a queryset. Defaults to using self.queryset
+[*] self.get_serializer(instance=self.get_queryset(), many=True)
+    Return the serializer instance that should be used for validating and deserializing input, and for serializing output.
+[*] 
